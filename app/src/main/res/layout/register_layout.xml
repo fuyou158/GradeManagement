@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cdcas"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_login"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="用户注册"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"/>
+
+        <EditText
+            android:id="@+id/et_rg_name"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密     码"/>
+
+        <EditText
+            android:id="@+id/et_rg_pswd"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_gravity="left"
+
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="20sp"
+            android:background="@drawable/button_style2"
+            android:id="@+id/button_rg"/>
+        <Button
+            android:id="@+id/button_bk"
+
+            android:layout_marginLeft="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/button_style2"
+            android:text="返回" />
+    </LinearLayout>
+</LinearLayout>

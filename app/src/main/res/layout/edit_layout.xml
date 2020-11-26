@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cdcas"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_edit_insert"
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="更改学生信息"/>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名："
+            android:id="@+id/tv_name"
+            />
+        <EditText
+            android:id="@+id/et_namee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分数："
+            android:id="@+id/tv_score"
+            />
+        <EditText
+            android:digits="0123456789"
+            android:maxLength="3"
+            android:id="@+id/et_scoree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班级："
+            android:id="@+id/tv_class" />
+        <EditText
+            android:id="@+id/et_classe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学号："
+            android:id="@+id/tv_grade" />
+        <EditText
+            android:digits="0123456789"
+            android:maxLength="12"
+            android:id="@+id/et_gradee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/button2_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/act_log_in_button_style"
+            android:text="确定" />
+        <Button
+            android:id="@+id/button2_bk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/act_log_in_button_style"
+            android:text="返回" />
+        <Button
+            android:id="@+id/button2_del"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/act_log_in_button_style"
+            android:text="删除" />
+    </LinearLayout>
+</LinearLayout>
